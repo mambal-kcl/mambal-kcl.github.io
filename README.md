@@ -18,9 +18,20 @@ js/theme.js         Scroll reveals, nav state, mobile menu
 img/                Abstract research figures (SVG)
 ```
 
+## Contributing
+
+**Do not push directly to `main`.** All changes go through a pull request so someone can review before the site goes live.
+
+1. Create a branch from `main` (e.g. `add-paper-smith-2025` or `update-team`).
+2. Make your edits locally and check the pages in a browser.
+3. Push the branch and open a pull request against `main`.
+4. Ask a lab member to review and merge.
+
+This applies to publications, team updates, news items, and any other content changes.
+
 ## Adding publications
 
-Publications are listed manually in `publications.html`. There is no database or build step.
+Publications are listed manually in `publications.html`. There is no database or build step. Submit your changes via a **pull request** (see [Contributing](#contributing) above); do not commit to `main` directly.
 
 ### Step 1 — Find the paper
 
@@ -81,6 +92,6 @@ If you add a new HTML page, copy the `<header>`, `<div class="mobile-menu">`, an
 
 ## Editing the team
 
-Team members are `.person` blocks in `team.html`, grouped by section. Each uses an initials monogram; replace `<span class="initials">` with an `<img>` if you add photos.
+Team members are `.person` blocks in `team.html`, grouped by section. Each uses an initials monogram; replace `<span class="initials">` with an `<img>` if you add photos. Open a pull request for any changes (see [Contributing](#contributing)).
 
 © 2025 MAMBAL · King's College London
