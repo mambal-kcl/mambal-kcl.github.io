@@ -2,33 +2,85 @@
 
 Machine Learning And Multiomics Bioinformatics for ALS · King's College London
 
-A redesigned, editorial research identity. Static HTML/CSS/JS — no build step.
-Open `index.html` in a browser, or deploy the folder as-is.
+Static HTML/CSS/JS site with no build step. Open `index.html` in a browser, or deploy the folder as-is (e.g. GitHub Pages).
 
 ## Structure
+
 ```
-index.html          Home — editorial homepage
+index.html          Home
 research.html       Research areas, projects, collaborations
 publications.html   Publications archive
-team.html           Full team directory
-join.html           Open positions + contact
-css/styles.css      Single stylesheet (design tokens + components)
+news.html           Lab news and updates
+team.html           Team directory
+join.html           Open positions and contact
+css/styles.css      Stylesheet (design tokens and components)
 js/theme.js         Scroll reveals, nav state, mobile menu
-img/                Hand-built abstract research figures (SVG)
+img/                Abstract research figures (SVG)
 ```
 
-## Design system
-- Palette: warm paper `#FAF8F4`, ink `#1A1714`, deep forest `#2C3A30`, burgundy `#6B2C38`.
-- Type: Instrument Serif (display), Inter (body), IBM Plex Mono (labels/metadata).
-- Figures in `img/` are real, abstract scientific plots (Manhattan, embedding, multi-omics
-  tracks) drawn in the palette — swap them for your own SVGs to taste.
-
 ## Adding publications
-In `publications.html`, copy a `.pub-row` block under the archive list (a commented
-template is included) and fill in year, title, authors, journal and link.
+
+Publications are listed manually in `publications.html`. There is no database or build step.
+
+### Step 1 — Find the paper
+
+Check the lab members' Google Scholar profiles for title, authors, journal and year:
+
+| Member | Google Scholar |
+|--------|----------------|
+| Alfredo Iacoangeli (PI) | https://scholar.google.com/citations?user=g410uocAAAAJ |
+| Ammar Al-Chalabi | https://scholar.google.co.uk/citations?user=mEMAWwwAAAAJ |
+| Ahmad Al Khleifat | https://scholar.google.com/citations?user=eXDCaSQAAAAJ |
+| Renato Santos | https://scholar.google.com/citations?user=TNnrFaMAAAAJ |
+| Yusuf Abdulle | https://scholar.google.com/citations?user=lfsAtvgAAAAJ |
+
+Use the publisher link (DOI or journal page) for the `href`, not the Google Scholar URL.
+
+### Step 2 — Add a row in `publications.html`
+
+Inside the `<div class="pub-list">` block, copy this template and paste it **above** older entries so the list stays sorted by year (newest first):
+
+```html
+<a class="pub-row" href="PUBLISHER_OR_DOI_URL">
+  <span class="pub-year">YEAR</span>
+  <div class="pub-body">
+    <h4>Full paper title</h4>
+    <p class="pub-by">First Author A, et al. &middot; <span class="journal">Journal name</span></p>
+  </div>
+  <span class="pub-go">View →</span>
+</a>
+```
+
+**Fields:**
+
+- `href` — link to the paper (e.g. `https://doi.org/10.xxxx/...` or the journal abstract page)
+- `pub-year` — four-digit year
+- `h4` — full title, sentence case as published
+- `pub-by` — first author plus `et al.` for long author lists; journal in `<span class="journal">`
+
+### Step 3 — Update the featured block (optional)
+
+If the paper should be highlighted at the top of `publications.html` and on the home page, also update the `<a class="featured">` block in both `publications.html` and `index.html` with the same title, journal, year and link.
+
+### Step 4 — Add a news item (optional)
+
+For notable releases, add an entry to the `<div class="notes">` list in `news.html`:
+
+```html
+<div class="note">
+  <span class="when">YEAR</span>
+  <p><span class="tag">Publication</span>Short description of the work.</p>
+</div>
+```
+
+Use `Publication`, `Preprint`, or `News` for the tag.
+
+### Step 5 — Update navigation (new pages only)
+
+If you add a new HTML page, copy the `<header>`, `<div class="mobile-menu">`, and `<footer>` from an existing page and add a link in the nav on every page.
 
 ## Editing the team
-Team members live in `team.html` as `.person` blocks grouped by section. Each uses an
-initials monogram; replace the `<span class="initials">` with an `<img>` if you add photos.
+
+Team members are `.person` blocks in `team.html`, grouped by section. Each uses an initials monogram; replace `<span class="initials">` with an `<img>` if you add photos.
 
 © 2025 MAMBAL · King's College London
