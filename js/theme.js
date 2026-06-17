@@ -1,31 +1,50 @@
-/* MAMBAL — subtle, intentional interactions */
+/* King's BioAI Lab — subtle, intentional interactions */
 (function () {
   "use strict";
 
-  /* Nav: add hairline + paper backdrop after scrolling past the hero edge */
+  /* Nav: collapse branding and show menu after scrolling */
   var header = document.querySelector(".site-header");
   function onScroll() {
     if (!header) return;
-    header.classList.toggle("scrolled", window.scrollY > 24);
+    var threshold = Math.min(header.offsetHeight * 0.55, 140);
+    header.classList.toggle("scrolled", window.scrollY > threshold);
   }
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
 
   /* Mobile menu */
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.querySelector(".mobile-menu");
   if (toggle && menu) {
-    toggle.addEventListener("click", function () {
-      var open = menu.classList.toggle("open");
+    function setMenuOpen(open) {
+      menu.classList.toggle("open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
       document.body.style.overflow = open ? "hidden" : "";
+    }
+
+    toggle.addEventListener("click", function () {
+      setMenuOpen(!menu.classList.contains("open"));
     });
+
+    var closeBtn = menu.querySelector(".mobile-menu-close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () {
+        setMenuOpen(false);
+      });
+    }
+
     menu.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
-        menu.classList.remove("open");
-        document.body.style.overflow = "";
-        toggle.setAttribute("aria-expanded", "false");
+        setMenuOpen(false);
       });
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.classList.contains("open")) {
+        setMenuOpen(false);
+      }
     });
   }
 

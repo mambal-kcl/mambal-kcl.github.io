@@ -1,22 +1,22 @@
-/* MAMBAL — team member profiles */
+/* King's BioAI Lab — team member profiles */
 (function () {
   "use strict";
 
   var members = {
     alfredo: {
-      name: "Prof. Alfredo Iacoangeli",
+      name: "Alfredo Iacoangeli",
       role: "Professor of Bioinformatics & AI for Genomic Medicine",
       image: "img/alfredo.webp",
-      research: "Leads MAMBAL's programme in machine learning and multi-omics for ALS genetics — from GWAS and rare-variant analysis to interpretable models that connect genomic risk to molecular phenotypes and clinical outcomes."
+      research: "Leads King's BioAI Lab's programme in bioinformatics and artificial intelligence for genomic medicine — from GWAS and rare-variant analysis to interpretable models that connect genomic risk to molecular phenotypes and clinical outcomes."
     },
     ammar: {
-      name: "Prof. Ammar Al-Chalabi",
+      name: "Ammar Al-Chalabi",
       role: "Professor of Neurology",
       image: "img/ammar.jpg",
       research: "Clinical and genetic epidemiology of motor neuron disease, including familial ALS cohorts, phenotype–genotype relationships and the translational implications of oligogenic and polygenic risk."
     },
     aak: {
-      name: "Dr. Ahmad Al Khleifat",
+      name: "Ahmad Al Khleifat",
       role: "Senior Research Fellow",
       image: "img/aak.jpeg",
       research: "Statistical genetics and bioinformatics in ALS, with a focus on rare variants, gene–environment interactions and integrative analyses across large clinical and genomic datasets."
@@ -57,11 +57,23 @@
       image: "img/nogayhan.jpeg",
       research: "Bioinformatics for ALS genomics — sequence and array data processing, variant annotation and tooling that underpins the group's rare-variant and GWAS analyses."
     },
+    peng: {
+      name: "Peng He",
+      role: "Bioinformatics",
+      initials: "PH",
+      research: "Bioinformatics support for genomic datasets, contributing to data processing, analysis workflows and reproducible pipelines across the group's research programme."
+    },
+    youngjun: {
+      name: "Young Jun Kim",
+      role: "Research Assistant",
+      initials: "YK",
+      research: "Research assistant supporting computational genomics projects in the lab, contributing to data analysis and project coordination across the group's research themes."
+    },
     triparna: {
       name: "Triparna Roy",
       role: "NIHR Predoctoral Fellow",
       image: "img/triparna.jpeg",
-      research: "Predoctoral research in computational genomics for motor neuron disease, building skills in statistical genetics and multi-omics analysis within the MAMBAL programme."
+      research: "Predoctoral research in computational genomics for motor neuron disease, building skills in statistical genetics and multi-omics analysis within the King's BioAI Lab programme."
     },
     dharti: {
       name: "Dharti Vasant Kumar",
@@ -122,6 +134,24 @@
       role: "BSc, Biochemistry",
       initials: "YA",
       research: "Visiting student supporting laboratory and computational projects in ALS genomics, gaining experience in bioinformatics workflows and genomic data analysis."
+    },
+    marwa: {
+      name: "Marwa Ali",
+      role: "Masters Student",
+      initials: "MA",
+      research: "Masters research in computational genomics, developing skills in bioinformatics and statistical analysis within the King's BioAI Lab programme."
+    },
+    youssra: {
+      name: "Youssra Semlali",
+      role: "Masters Student",
+      initials: "YS",
+      research: "Masters research in bioinformatics and genomic data analysis, supporting the group's work in computational approaches to genomic medicine."
+    },
+    yunjie: {
+      name: "Yunjie Chai",
+      role: "Masters Student",
+      initials: "YC",
+      research: "Masters research in machine learning and genomics, building expertise in computational methods for integrative genomic analyses."
     }
   };
 

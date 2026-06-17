@@ -1,6 +1,6 @@
-# MAMBAL — website
+# King's BioAI Lab — website
 
-Machine Learning And Multiomics Bioinformatics for ALS · King's College London
+Bioinformatics and Artificial Intelligence for Genomic Medicine · King's College London
 
 Static HTML/CSS/JS site with no build step. Open `index.html` in a browser, or deploy the folder as-is (e.g. GitHub Pages).
 
@@ -142,4 +142,4 @@ At the bottom of `team.html`, replace a placeholder figure with:
 
 Store images in **`img/social/`**.
 
-© 2025 MAMBAL · King's College London
+© 2025 King's BioAI Lab · King's College London

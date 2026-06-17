@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Team — MAMBAL</title>
-<meta name="description" content="The interdisciplinary team behind MAMBAL at King's College London.">
+<title>Team — King's BioAI Lab</title>
+<meta name="description" content="The interdisciplinary team behind King's BioAI Lab at King's College London.">
 <script>document.documentElement.classList.add("js")</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
 <header class="site-header">
   <div class="wrap nav-inner">
-    <a class="wordmark" href="index.html">MAMBAL</a>
+    <a class="wordmark" href="index.html" aria-label="King's BioAI Lab home"><img src="img/logo.png" alt="" width="612" height="408"></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -24,10 +24,11 @@
       <a href="team.html" aria-current="page">Team</a>
       <a href="join.html">Join Us</a>
     </nav>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 <div class="mobile-menu" id="mobileMenu">
+  <button type="button" class="mobile-menu-close" aria-label="Close menu">Close</button>
   <a href="index.html"><span class="mi">01</span>Home</a>
   <a href="research.html"><span class="mi">02</span>Research</a>
   <a href="publications.html"><span class="mi">03</span>Publications</a>
@@ -46,12 +47,12 @@
   <!-- PI feature -->
   <section class="wrap" style="padding-block:clamp(3rem,7vw,6rem);">
     <div class="pi">
-      <button type="button" class="portrait reveal person-btn" style="--accent:var(--forest)" data-person="alfredo" aria-label="View Prof. Alfredo Iacoangeli research profile"><img src="img/alfredo.webp" alt=""></button>
+      <button type="button" class="portrait reveal person-btn" style="--accent:var(--forest)" data-person="alfredo" aria-label="View Alfredo Iacoangeli research profile"><img src="img/alfredo.webp" alt=""></button>
       <div class="reveal" data-d="1">
         <span class="eyebrow"><span class="idx">↳</span>&nbsp;Principal Investigator</span>
-        <h2 style="margin-top:1.2rem;">Prof. Alfredo Iacoangeli</h2>
+        <h2 style="margin-top:1.2rem;">Alfredo Iacoangeli</h2>
         <p class="role">Professor of Bioinformatics &amp; AI for Genomic Medicine</p>
-        <p class="bio">Alfredo leads MAMBAL, where the group develops machine-learning and multi-omics methods to understand the genetics of ALS. He sits across Biostatistics &amp; Health Informatics and Basic &amp; Clinical Neuroscience at the IoPPN, King's College London.</p>
+        <p class="bio">Alfredo leads King's BioAI Lab, where the group develops bioinformatics and artificial-intelligence methods for genomic medicine. He sits across Biostatistics &amp; Health Informatics and Basic &amp; Clinical Neuroscience at the IoPPN, King's College London.</p>
         <p style="margin-top:1.8rem;"><a class="link" href="mailto:alfredo.iacoangeli@kcl.ac.uk">Get in touch <span class="arrow">→</span></a></p>
         <p style="margin-top:1rem;"><a href="#" class="link person-profile-link" data-person="alfredo">Research profile <span class="arrow">→</span></a></p>
       </div>
@@ -61,31 +62,38 @@
   <section class="team-group wrap">
     <div class="gh reveal"><h2>Faculty &amp; senior researchers</h2><span class="count">04</span></div>
     <div class="people-grid">
-      <button type="button" class="person person-btn reveal" data-person="ammar" aria-label="View Prof. Ammar Al-Chalabi profile"><div class="portrait" style="--accent:var(--forest)"><img src="img/ammar.jpg" alt=""></div><div class="person-body"><h4>Prof. Ammar Al-Chalabi</h4><p class="role">Professor of Neurology</p></div></button>
-      <button type="button" class="person person-btn reveal" data-d="1" data-person="aak" aria-label="View Dr. Ahmad Al Khleifat profile"><div class="portrait" style="--accent:var(--burgundy)"><img src="img/aak.jpeg" alt=""></div><div class="person-body"><h4>Dr. Ahmad Al Khleifat</h4><p class="role">Senior Research Fellow</p></div></button>
+      <button type="button" class="person person-btn reveal" data-person="ammar" aria-label="View Ammar Al-Chalabi profile"><div class="portrait" style="--accent:var(--forest)"><img src="img/ammar.jpg" alt=""></div><div class="person-body"><h4>Ammar Al-Chalabi</h4><p class="role">Professor of Neurology</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="1" data-person="aak" aria-label="View Ahmad Al Khleifat profile"><div class="portrait" style="--accent:var(--burgundy)"><img src="img/aak.jpeg" alt=""></div><div class="person-body"><h4>Ahmad Al Khleifat</h4><p class="role">Senior Research Fellow</p></div></button>
       <button type="button" class="person person-btn reveal" data-d="2" data-person="emeka" aria-label="View Emeka Uzochukwu profile"><div class="portrait" style="--accent:var(--ink)"><img src="img/emeka.png" alt=""></div><div class="person-body"></div><div class="person-body"><h4>Emeka Uzochukwu</h4><p class="role">Research Fellow</p></div></button>
       <button type="button" class="person person-btn reveal" data-d="3" data-person="simon" aria-label="View Simon Topp profile"><div class="portrait" style="--accent:var(--forest)"><img src="img/simon.jpeg" alt=""></div><div class="person-body"><h4>Simon Topp</h4><p class="role">Senior Bioinformatician</p></div></button>
     </div>
   </section>
   <section class="team-group wrap">
-    <div class="gh reveal"><h2>Researchers &amp; bioinformaticians</h2><span class="count">04</span></div>
+    <div class="gh reveal"><h2>Researchers &amp; bioinformaticians</h2><span class="count">05</span></div>
     <div class="people-grid">
       <button type="button" class="person person-btn reveal" data-person="aminah" aria-label="View Aminah Ali profile"><div class="portrait" style="--accent:var(--burgundy)"><img src="img/aminah.jpeg" alt=""></div><div class="person-body"><h4>Aminah Ali</h4><p class="role">Bioinformatics</p></div></button>
       <button type="button" class="person person-btn reveal" data-d="1" data-person="esteban" aria-label="View Esteban Gomez Cifuentes profile"><div class="portrait" style="--accent:var(--ink)"><img src="img/Esteban.png" alt=""></div><div class="person-body"><h4>Esteban Gomez Cifuentes</h4><p class="role">ML for Genomics</p></div></button>
       <button type="button" class="person person-btn reveal" data-d="2" data-person="ramya" aria-label="View Ramya Lakshmanan profile"><div class="portrait" style="--accent:var(--forest)"><span class="initials">RL</span></div><div class="person-body"><h4>Ramya Lakshmanan</h4><p class="role">Research Associate</p></div></button>
       <button type="button" class="person person-btn reveal" data-d="3" data-person="nogayhan" aria-label="View Nogayhan Seymen profile"><div class="portrait" style="--accent:var(--burgundy)"><img src="img/nogayhan.jpeg" alt=""></div><div class="person-body"><h4>Nogayhan Seymen</h4><p class="role">Bioinformatician</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="4" data-person="peng" aria-label="View Peng He profile"><div class="portrait" style="--accent:var(--forest)"><span class="initials">PH</span></div><div class="person-body"><h4>Peng He</h4><p class="role">Bioinformatics</p></div></button>
+    </div>
+  </section>
+  <section class="team-group wrap">
+    <div class="gh reveal"><h2>Research assistants</h2><span class="count">01</span></div>
+    <div class="people-grid">
+      <button type="button" class="person person-btn reveal" data-person="youngjun" aria-label="View Young Jun Kim profile"><div class="portrait" style="--accent:var(--ink)"><span class="initials">YK</span></div><div class="person-body"><h4>Young Jun Kim</h4><p class="role">Research Assistant</p></div></button>
     </div>
   </section>
   <section class="team-group wrap">
     <div class="gh reveal"><h2>PhD researchers</h2><span class="count">07</span></div>
     <div class="people-grid">
-      <button type="button" class="person person-btn reveal" data-person="renato" aria-label="View Renato Santos profile"><div class="portrait" style="--accent:var(--forest)"><img src="img/renato.jpeg" alt=""></div><div class="person-body"><h4>Renato Santos</h4><p class="role">PhD Researcher</p></div></button>
       <button type="button" class="person person-btn reveal" data-person="johanna" aria-label="View Johanna Vallikivi profile"><div class="portrait" style="--accent:var(--burgundy)"><img src="img/johanna.jpeg" alt=""></div><div class="person-body"><h4>Johanna Vallikivi</h4><p class="role">PhD Researcher</p></div></button>
-      <button type="button" class="person person-btn reveal" data-d="1" data-person="abed" aria-label="View Abed Alah Mosa Al Refaee profile"><div class="portrait" style="--accent:var(--ink)"><img src="img/abed.png" alt=""></div><div class="person-body"><h4>Abed Alah Mosa Al Refaee</h4><p class="role">PhD Researcher</p></div></button>
-      <button type="button" class="person person-btn reveal" data-d="2" data-person="anqi" aria-label="View Anqi Jiang profile"><div class="portrait" style="--accent:var(--forest)"><span class="initials">AJ</span></div><div class="person-body"><h4>Anqi Jiang</h4><p class="role">PhD Researcher</p></div></button>
-      <button type="button" class="person person-btn reveal" data-d="3" data-person="narges" aria-label="View Narges Matinazad profile"><div class="portrait" style="--accent:var(--forest)"><img src="img/narges.jpeg" alt=""></div><div class="person-body"><h4>Narges Matinazad</h4><p class="role">PhD Researcher</p></div></button>
-      <button type="button" class="person person-btn reveal" data-d="2" data-person="yusuf" aria-label="View Yusuf Abdulle profile"><div class="portrait" style="--accent:var(--ink)"><img src="img/yusuf.png" alt=""></div><div class="person-body"><h4>Yusuf Abdulle</h4><p class="role">PhD Researcher</p></div></button>
-      <button type="button" class="person person-btn reveal" data-d="1" data-person="indu" aria-label="View Indu Navar profile"><div class="portrait" style="--accent:var(--burgundy)"><img src="img/indu.png" alt=""></div><div class="person-body"><h4>Indu Navar</h4><p class="role">PhD Researcher</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="1" data-person="anqi" aria-label="View Anqi Jiang profile"><div class="portrait" style="--accent:var(--forest)"><span class="initials">AJ</span></div><div class="person-body"><h4>Anqi Jiang</h4><p class="role">PhD Researcher</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="2" data-person="narges" aria-label="View Narges Matinazad profile"><div class="portrait" style="--accent:var(--forest)"><img src="img/narges.jpeg" alt=""></div><div class="person-body"><h4>Narges Matinazad</h4><p class="role">PhD Researcher</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="3" data-person="indu" aria-label="View Indu Navar profile"><div class="portrait" style="--accent:var(--burgundy)"><img src="img/indu.png" alt=""></div><div class="person-body"><h4>Indu Navar</h4><p class="role">PhD Researcher</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="1" data-person="renato" aria-label="View Renato Santos profile"><div class="portrait" style="--accent:var(--forest)"><img src="img/renato.jpeg" alt=""></div><div class="person-body"><h4>Renato Santos</h4><p class="role">PhD Researcher</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="2" data-person="abed" aria-label="View Abed Alah Mosa Al Refaee profile"><div class="portrait" style="--accent:var(--ink)"><img src="img/abed.png" alt=""></div><div class="person-body"><h4>Abed Alah Mosa Al Refaee</h4><p class="role">PhD Researcher</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="3" data-person="yusuf" aria-label="View Yusuf Abdulle profile"><div class="portrait" style="--accent:var(--ink)"><img src="img/yusuf.png" alt=""></div><div class="person-body"><h4>Yusuf Abdulle</h4><p class="role">PhD Researcher</p></div></button>
     </div>
   </section>
   <section class="team-group wrap">
@@ -97,10 +105,24 @@
     </div>
   </section>
   <section class="team-group wrap">
+    <div class="gh reveal"><h2>Masters students</h2><span class="count">03</span></div>
+    <div class="people-grid">
+      <button type="button" class="person person-btn reveal" data-person="marwa" aria-label="View Marwa Ali profile"><div class="portrait" style="--accent:var(--burgundy)"><span class="initials">MA</span></div><div class="person-body"><h4>Marwa Ali</h4><p class="role">Masters Student</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="1" data-person="youssra" aria-label="View Youssra Semlali profile"><div class="portrait" style="--accent:var(--forest)"><span class="initials">YS</span></div><div class="person-body"><h4>Youssra Semlali</h4><p class="role">Masters Student</p></div></button>
+      <button type="button" class="person person-btn reveal" data-d="2" data-person="yunjie" aria-label="View Yunjie Chai profile"><div class="portrait" style="--accent:var(--ink)"><span class="initials">YC</span></div><div class="person-body"><h4>Yunjie Chai</h4><p class="role">Masters Student</p></div></button>
+    </div>
+  </section>
+  <section class="team-group wrap">
     <div class="gh reveal"><h2>Visiting students</h2><span class="count">01</span></div>
     <div class="people-grid">
       <button type="button" class="person person-btn reveal" data-d="3" data-person="yadusayan" aria-label="View Yadusayan Appulingam profile"><div class="portrait" style="--accent:var(--burgundy)"><span class="initials">YA</span></div><div class="person-body"><h4>Yadusayan Appulingam</h4><p class="role">BSc, Biochemistry</p></div></button>
     </div>
+  </section>
+
+  <section class="team-group wrap alumni-group">
+    <div class="gh reveal"><h2>Alumni</h2></div>
+    <p class="lede reveal" data-d="1">Former students and researchers who trained in the lab.</p>
+    <div class="alumni-list reveal" data-d="2"></div>
   </section>
 
   <section class="wrap lab-gallery" aria-labelledby="gallery-h">
@@ -113,16 +135,13 @@
     </div>
     <div class="photo-grid">
       <figure class="photo-card reveal">
-        <div class="photo-placeholder" aria-hidden="true"></div>
-        <figcaption>Lab social</figcaption>
+        <img src="img/social1.jpeg" alt="Lab members at a group dinner">
       </figure>
       <figure class="photo-card reveal" data-d="1">
-        <div class="photo-placeholder" aria-hidden="true"></div>
-        <figcaption>Group outing</figcaption>
+        <img src="img/social2.jpeg" alt="Lab group at a social gathering">
       </figure>
       <figure class="photo-card reveal" data-d="2">
-        <div class="photo-placeholder" aria-hidden="true"></div>
-        <figcaption>Conference</figcaption>
+        <img src="img/social3.jpg" alt="Lab group sharing a meal together">
       </figure>
     </div>
   </section>
@@ -156,11 +175,11 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-top">
-      <div class="footer-mark">MAMBAL</div>
+      <div class="footer-mark">King's BioAI Lab</div>
       <div class="footer-col"><h5>Navigate</h5><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="team.html">Team</a><a href="join.html">Join Us</a></div>
       <div class="footer-col"><h5>Contact</h5><a href="mailto:alfredo.iacoangeli@kcl.ac.uk">alfredo.iacoangeli@kcl.ac.uk</a><p>SGDP Centre, IoPPN<br>16 De Crespigny Park<br>London SE5 8AF, UK</p></div>
     </div>
-    <div class="footer-bottom"><span class="acronym-expansion"><strong>MA</strong>chine Learning And <strong>M</strong>ultiomics <strong>B</strong>ioinformatics for <strong>AL</strong>S</span><span>&copy; 2025 MAMBAL &middot; King's College London</span></div>
+    <div class="footer-bottom"><span class="acronym-expansion">Bioinformatics and Artificial Intelligence for Genomic Medicine</span><span>&copy; 2025 King's BioAI Lab &middot; King's College London</span></div>
   </div>
 </footer>
 
